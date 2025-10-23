@@ -1,0 +1,774 @@
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(220, 38, 38, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #dc2626;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: #999;
+            line-height: 1.7;
+        }
+
+        .process-section {
+            margin: 4rem 0;
+        }
+
+        .process-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #dc2626;
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 2rem;
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .step-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .step-content p {
+            color: #999;
+            line-height: 1.7;
+        }
+
+        .gallery-section {
+            margin: 4rem 0;
+        }
+
+        .gallery-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #dc2626;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            border-radius: 16px;
+            padding: 4rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: #fff;
+            color: #dc2626;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #000;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 60px 20px 30px;
+            border-top: 1px solid #222;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-social {
+            margin-bottom: 30px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: #dc2626;
+            transform: scale(1.2);
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .service-hero p {
+                font-size: 1.2rem;
+            }
+
+            .process-step {
+                grid-template-columns: 1fr;
+            }
+
+            .step-number {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">SEPTAN</a>
+            <ul>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#blog">Blog</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero" id="heroSection">
+        <div>
+            <h1 id="serviceTitle">Loading...</h1>
+            <p id="serviceTagline">Professional construction services</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/#services">Services</a>
+            <span>/</span>
+            <span id="breadcrumbService">Service Name</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="service-content">
+        <!-- Overview -->
+        <section class="service-overview">
+            <h2>Overview</h2>
+            <div id="serviceDescription">
+                <p>Loading service details...</p>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section>
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center; color: #dc2626;">Key Features</h2>
+            <div class="features-grid" id="featuresGrid">
+                <!-- Features will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Our Process -->
+        <section class="process-section">
+            <h2>Our Process</h2>
+            <div class="process-steps" id="processSteps">
+                <!-- Process steps will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section">
+            <h2>Project Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery images will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's discuss how we can bring your vision to life</p>
+            <a href="/#contact" class="cta-button">Get a Free Consultation</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://facebook.com/SeptanDevelopers" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/septan_developers" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/septan-developers-pvt-ltd" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@SeptanDevelopers" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Septan Developers. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get service slug from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceSlug = urlParams.get('service') || window.location.pathname.split('/').pop().replace('.html', '');
+        
+        const API_URL = 'http://localhost:5000/api';
+
+        // Service data templates
+        const serviceData = {
+            'architectural-design': {
+                title: 'Architectural Design',
+                tagline: 'Creating innovative spaces that inspire',
+                description: `
+                    <p>At Septan Developers, we specialize in creating architectural masterpieces that seamlessly blend form and function. Our architectural design services encompass everything from initial concept development to detailed construction drawings.</p>
+                    <p>We believe that great architecture should tell a story, reflect the client's vision, and respond intelligently to its environment. Our team of experienced architects combines creativity with technical expertise to deliver designs that are not only visually stunning but also practical, sustainable, and built to last.</p>
+                    <p>From residential villas to commercial complexes, we approach each project with fresh eyes and innovative solutions, ensuring that your space is uniquely yours.</p>
+                `,
+                features: [
+                    { icon: 'fa-pencil-ruler', title: 'Concept Development', description: 'Transforming your ideas into comprehensive architectural concepts that capture your vision and meet your needs.' },
+                    { icon: 'fa-cube', title: '3D Visualization', description: 'Advanced 3D modeling and rendering to help you visualize your project before construction begins.' },
+                    { icon: 'fa-leaf', title: 'Sustainable Design', description: 'Eco-friendly solutions that minimize environmental impact while maximizing efficiency and comfort.' },
+                    { icon: 'fa-file-alt', title: 'Technical Drawings', description: 'Detailed construction documents ensuring accurate implementation of your design vision.' }
+                ],
+                process: [
+                    { title: 'Initial Consultation', description: 'We meet with you to understand your vision, requirements, budget, and timeline. This is where we establish the foundation of your project.' },
+                    { title: 'Site Analysis', description: 'Comprehensive evaluation of your site, including topography, climate, regulations, and surrounding context to inform design decisions.' },
+                    { title: 'Concept Design', description: 'Development of initial design concepts with sketches, mood boards, and preliminary 3D models for your review and feedback.' },
+                    { title: 'Design Development', description: 'Refinement of approved concepts into detailed designs, including floor plans, elevations, sections, and material selections.' },
+                    { title: 'Construction Documents', description: 'Preparation of comprehensive technical drawings and specifications required for permits and construction.' },
+                    { title: 'Project Support', description: 'Ongoing support during construction to ensure your vision is realized exactly as designed.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+                    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+                    'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800',
+                    'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800',
+                    'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+                    'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+                ]
+            },
+            'structural-design': {
+                title: 'Structural Design',
+                tagline: 'Engineering excellence for lasting structures',
+                description: `
+                    <p>Our structural engineering services ensure that every building we design is safe, stable, and built to withstand the test of time. We combine advanced engineering principles with innovative design solutions to create structures that are both strong and efficient.</p>
+                    <p>Whether it's a residential home or a commercial complex, our structural engineers work closely with architects and clients to develop solutions that support the architectural vision while meeting all safety standards and building codes.</p>
+                    <p>We utilize the latest structural analysis software and stay current with building regulations to deliver designs that optimize material usage, reduce costs, and ensure structural integrity.</p>
+                `,
+                features: [
+                    { icon: 'fa-hard-hat', title: 'Load Analysis', description: 'Comprehensive structural analysis to ensure your building can safely support all intended loads and stresses.' },
+                    { icon: 'fa-drafting-compass', title: 'Foundation Design', description: 'Expert foundation engineering tailored to your site conditions and building requirements.' },
+                    { icon: 'fa-shield-alt', title: 'Seismic Design', description: 'Earthquake-resistant structural solutions that protect your investment and occupants.' },
+                    { icon: 'fa-calculator', title: 'Cost Optimization', description: 'Efficient structural solutions that balance safety, performance, and budget considerations.' }
+                ],
+                process: [
+                    { title: 'Structural Assessment', description: 'Evaluation of architectural plans and site conditions to determine structural requirements and constraints.' },
+                    { title: 'Load Calculations', description: 'Detailed analysis of all loads including dead loads, live loads, wind loads, and seismic forces.' },
+                    { title: 'Structural Modeling', description: 'Creation of detailed 3D structural models using advanced engineering software for accurate analysis.' },
+                    { title: 'Design Development', description: 'Development of structural systems including foundations, columns, beams, slabs, and connections.' },
+                    { title: 'Documentation', description: 'Preparation of comprehensive structural drawings and specifications for construction.' },
+                    { title: 'Construction Support', description: 'On-site inspections and support to ensure proper implementation of structural designs.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800',
+                    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800',
+                    'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=800',
+                    'https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800',
+                    'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=800',
+                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800'
+                ]
+            },
+            'building-information-modeling': {
+                title: 'Building Information Modeling (BIM)',
+                tagline: 'Digital innovation for smarter construction',
+                description: `
+                    <p>Building Information Modeling (BIM) revolutionizes the way we design, construct, and manage buildings. Our BIM services provide a comprehensive digital representation of your project, enabling better collaboration, fewer errors, and more efficient construction.</p>
+                    <p>Using cutting-edge BIM technology, we create intelligent 3D models that contain detailed information about every aspect of your building – from structural elements to MEP systems, materials, and costs.</p>
+                    <p>This approach allows all stakeholders to visualize the project in detail, identify potential issues before construction, and make informed decisions throughout the project lifecycle.</p>
+                `,
+                features: [
+                    { icon: 'fa-project-diagram', title: 'Collaborative Platform', description: 'Centralized digital platform enabling seamless collaboration between all project stakeholders.' },
+                    { icon: 'fa-search', title: 'Clash Detection', description: 'Early identification of design conflicts and clashes before construction begins, saving time and money.' },
+                    { icon: 'fa-chart-line', title: '4D & 5D BIM', description: 'Time and cost integration for better project scheduling and budget management.' },
+                    { icon: 'fa-building', title: 'Facility Management', description: 'Digital twin for efficient building operation and maintenance throughout its lifecycle.' }
+                ],
+                process: [
+                    { title: 'Project Setup', description: 'Establishment of BIM protocols, standards, and workflows tailored to your project requirements.' },
+                    { title: '3D Modeling', description: 'Creation of detailed 3D models incorporating architectural, structural, and MEP systems.' },
+                    { title: 'Coordination', description: 'Multi-discipline coordination to identify and resolve conflicts before construction.' },
+                    { title: 'Documentation', description: 'Generation of construction documents and shop drawings directly from the BIM model.' },
+                    { title: 'Construction Support', description: 'Real-time model updates and support during construction for better decision-making.' },
+                    { title: 'As-Built Models', description: 'Final as-built BIM models delivered for facility management and future renovations.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800',
+                    'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=800',
+                    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800',
+                    'https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800',
+                    'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=800',
+                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800'
+                ]
+            },
+            'interior-design': {
+                title: 'Interior Design',
+                tagline: 'Transforming spaces into experiences',
+                description: `
+                    <p>Our interior design services focus on creating spaces that are both beautiful and functional, reflecting your personality and enhancing your lifestyle. We believe that great interior design goes beyond aesthetics – it's about creating environments that inspire, comfort, and delight.</p>
+                    <p>From concept to completion, our team of experienced interior designers works closely with you to understand your needs, preferences, and budget. We then transform your space with carefully curated designs that balance style, comfort, and practicality.</p>
+                    <p>Whether it's a residential home, office, or commercial space, we bring creativity, attention to detail, and a deep understanding of materials, colors, and lighting to every project.</p>
+                `,
+                features: [
+                    { icon: 'fa-palette', title: 'Space Planning', description: 'Optimal layout design that maximizes functionality and flow while maintaining aesthetic appeal.' },
+                    { icon: 'fa-couch', title: 'Furniture Selection', description: 'Curated furniture and fixtures that complement your design vision and meet your practical needs.' },
+                    { icon: 'fa-lightbulb', title: 'Lighting Design', description: 'Strategic lighting solutions that enhance ambiance, functionality, and energy efficiency.' },
+                    { icon: 'fa-paint-brush', title: 'Material & Finishes', description: 'Expert selection of materials, colors, textures, and finishes for a cohesive design.' }
+                ],
+                process: [
+                    { title: 'Discovery Meeting', description: 'Understanding your lifestyle, preferences, functional requirements, and design aspirations.' },
+                    { title: 'Concept Development', description: 'Creation of initial design concepts with mood boards, color palettes, and style direction.' },
+                    { title: 'Design Presentation', description: 'Detailed presentation of design scheme including floor plans, 3D visualizations, and material samples.' },
+                    { title: 'Design Refinement', description: 'Refinement of approved concepts based on your feedback and preferences.' },
+                    { title: 'Documentation', description: 'Detailed specifications, drawings, and schedules for procurement and implementation.' },
+                    { title: 'Project Management', description: 'Oversight of installation and coordination with contractors to ensure perfect execution.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800',
+                    'https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800',
+                    'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800',
+                    'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800',
+                    'https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=800',
+                    'https://images.unsplash.com/photo-1615876063272-e2174d12a2cf?w=800'
+                ]
+            },
+            '3d-rendering-visualization': {
+                title: '3D Rendering & Visualization',
+                tagline: 'See your project before it's built',
+                description: `
+                    <p>Our 3D rendering and visualization services bring your projects to life with photorealistic images and immersive virtual tours. We use state-of-the-art rendering technology to create stunning visualizations that help you see, understand, and refine your design before construction begins.</p>
+                    <p>These visualizations are powerful tools for making design decisions, presenting to stakeholders, and marketing your development. Our renders capture every detail – from materials and lighting to landscaping and atmosphere.</p>
+                    <p>Whether you need exterior views, interior renders, or aerial perspectives, we deliver high-quality visualizations that accurately represent your vision and help bring investors, buyers, and team members on board.</p>
+                `,
+                features: [
+                    { icon: 'fa-image', title: 'Photorealistic Renders', description: 'Ultra-realistic images that showcase your project in its best light with accurate materials and lighting.' },
+                    { icon: 'fa-vr-cardboard', title: 'Virtual Tours', description: 'Immersive 360-degree virtual reality tours that let you explore your space before construction.' },
+                    { icon: 'fa-video', title: 'Animation', description: 'Dynamic walkthroughs and fly-throughs that bring your project to life in motion.' },
+                    { icon: 'fa-mobile-alt', title: 'Interactive Models', description: 'Real-time 3D models that allow you to explore different design options instantly.' }
+                ],
+                process: [
+                    { title: 'Brief & Requirements', description: 'Understanding your visualization needs, target audience, and desired atmosphere.' },
+                    { title: '3D Modeling', description: 'Creation of detailed 3D models based on architectural drawings and specifications.' },
+                    { title: 'Material & Lighting', description: 'Application of realistic materials, textures, and lighting to achieve photorealistic quality.' },
+                    { title: 'Camera Setup', description: 'Strategic positioning of views to showcase the best features of your design.' },
+                    { title: 'Rendering', description: 'High-resolution rendering using advanced algorithms for maximum realism.' },
+                    { title: 'Post-Production', description: 'Final touches including color correction, atmosphere, and environment enhancement.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+                    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+                    'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800',
+                    'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800',
+                    'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+                    'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+                ]
+            },
+            'estimation-consultation': {
+                title: 'Estimation & Consultation',
+                tagline: 'Accurate planning for successful projects',
+                description: `
+                    <p>Our estimation and consultation services provide you with accurate cost projections and expert guidance throughout your project. We understand that budget is a critical factor in any construction project, and our detailed estimates help you make informed decisions from the start.</p>
+                    <p>Our experienced team analyzes every aspect of your project – from materials and labor to permits and contingencies – to provide comprehensive cost breakdowns. We also offer value engineering suggestions to optimize your budget without compromising quality.</p>
+                    <p>Beyond estimation, we provide strategic consultation on project feasibility, scheduling, procurement, and risk management to ensure your project's success.</p>
+                `,
+                features: [
+                    { icon: 'fa-file-invoice-dollar', title: 'Detailed Estimates', description: 'Comprehensive cost breakdowns covering all aspects of your construction project.' },
+                    { icon: 'fa-chart-pie', title: 'Value Engineering', description: 'Cost optimization strategies that maintain quality while reducing expenses.' },
+                    { icon: 'fa-tasks', title: 'Feasibility Studies', description: 'Assessment of project viability including cost-benefit analysis and risk evaluation.' },
+                    { icon: 'fa-handshake', title: 'Expert Consultation', description: 'Professional guidance on all aspects of construction planning and execution.' }
+                ],
+                process: [
+                    { title: 'Project Review', description: 'Thorough review of your plans, specifications, and project requirements.' },
+                    { title: 'Site Assessment', description: 'Evaluation of site conditions and their impact on project costs.' },
+                    { title: 'Quantity Takeoff', description: 'Detailed measurement and quantification of all materials and work items.' },
+                    { title: 'Cost Analysis', description: 'Comprehensive pricing based on current market rates and project specifics.' },
+                    { title: 'Report Preparation', description: 'Detailed cost estimate report with breakdowns by category and phase.' },
+                    { title: 'Consultation', description: 'Review meeting to discuss estimates, alternatives, and optimization opportunities.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
+                    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
+                    'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800',
+                    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
+                    'https://images.unsplash.com/photo-1552581234-26160f608093?w=800',
+                    'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800'
+                ]
+            },
+            'project-management': {
+                title: 'Project Management',
+                tagline: 'Keeping your project on track and on budget',
+                description: `
+                    <p>Our professional project management services ensure that your construction project is delivered on time, within budget, and to the highest quality standards. We coordinate all aspects of construction from planning through completion, serving as your single point of contact.</p>
+                    <p>Our experienced project managers bring expertise in scheduling, cost control, quality assurance, and risk management. We proactively identify and resolve issues before they become problems, keeping your project moving forward smoothly.</p>
+                    <p>Whether you need full project management or specific oversight services, we provide the expertise and attention to detail necessary to bring your vision to reality.</p>
+                `,
+                features: [
+                    { icon: 'fa-calendar-alt', title: 'Schedule Management', description: 'Detailed planning and monitoring to ensure your project stays on schedule.' },
+                    { icon: 'fa-dollar-sign', title: 'Budget Control', description: 'Comprehensive cost tracking and management to keep your project within budget.' },
+                    { icon: 'fa-check-circle', title: 'Quality Assurance', description: 'Rigorous quality control processes to ensure the highest standards of workmanship.' },
+                    { icon: 'fa-users-cog', title: 'Coordination', description: 'Seamless coordination of all contractors, suppliers, and stakeholders.' }
+                ],
+                process: [
+                    { title: 'Project Planning', description: 'Development of comprehensive project plans including schedules, budgets, and resource allocation.' },
+                    { title: 'Team Assembly', description: 'Selection and coordination of contractors, suppliers, and specialists for your project.' },
+                    { title: 'Procurement', description: 'Management of material procurement and contractor bidding to optimize quality and cost.' },
+                    { title: 'Construction Oversight', description: 'Daily monitoring of construction progress, quality, and compliance with plans.' },
+                    { title: 'Progress Reporting', description: 'Regular updates on schedule, budget, and any issues requiring attention.' },
+                    { title: 'Project Closeout', description: 'Final inspections, documentation, and handover of your completed project.' }
+                ],
+                gallery: [
+                    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800',
+                    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800',
+                    'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=800',
+                    'https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800',
+                    'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=800',
+                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800'
+                ]
+            }
+        };
+
+        // Load service data
+        function loadServiceData() {
+            const data = serviceData[serviceSlug];
+            
+            if (!data) {
+                console.error('Service not found');
+                return;
+            }
+
+            // Update title and breadcrumb
+            document.getElementById('serviceTitle').textContent = data.title;
+            document.getElementById('serviceTagline').textContent = data.tagline;
+            document.getElementById('breadcrumbService').textContent = data.title;
+            document.title = `${data.title} - Septan Developers`;
+
+            // Update description
+            document.getElementById('serviceDescription').innerHTML = data.description;
+
+            // Load features
+            const featuresGrid = document.getElementById('featuresGrid');
+            // Load features
+            const featuresGrid = document.getElementById('featuresGrid');
+            featuresGrid.innerHTML = data.features.map(f => `
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas ${f.icon}"></i>
+                    </div>
+                    <h3>${f.title}</h3>
+                    <p>${f.description}</p>
+                </div>
+            `).join('');
+
+            // Load process steps
+            const processSteps = document.getElementById('processSteps');
+            processSteps.innerHTML = data.process.map((step, index) => `
+                <div class="process-step">
+                    <div class="step-number">${index + 1}</div>
+                    <div class="step-content">
+                        <h3>${step.title}</h3>
+                        <p>${step.description}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Load gallery
+            const galleryGrid = document.getElementById('galleryGrid');
+            galleryGrid.innerHTML = data.gallery.map(img => `
+                <div class="gallery-item" style="background-image: url('${img}')"></div>
+            `).join('');
+        }
+
+        // Initialize on page load
+        loadServiceData();
+
+        // Track page view
+        fetch(`${API_URL}/analytics/track`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                event_type: 'page_view',
+                page_url: window.location.href,
+                reference_type: 'service',
+                reference_id: serviceSlug
+            })
+        }).catch(err => console.log('Analytics tracking failed'));
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Name - Septan Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Copy navigation styles from main site */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #dc2626;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #dc2626;
+        }
+
+        /* Hero Section */
+        .service-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .service-hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .service-hero p {
+            font-size: 1.5rem;
+            color: #dc2626;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #111;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #222;
+        }
+
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: #dc2626;
+        }
+
+        .breadcrumb span {
+            color: #666;
+        }
+
+        /* Content */
+        .service-content {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .service-overview {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-overview h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #dc2626;
+        }
+
+        .service-overview p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #dc2626;
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(220, 
